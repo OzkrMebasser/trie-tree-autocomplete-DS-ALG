@@ -7,20 +7,37 @@ import { TrieTree } from '../assets/TrieTree';
 const SearchContainer = styled.div`
   display: flex;
   border-radius: 8px;
-  background-color: #fff;
+  margin-left: 650px;
+  background-color: #3333;
   form {
     width: 355px;
   }
   span {
-    margin: 14px 0px 14px 14px;
+    margin: 14px 0px 14px 10px;
+    position: absolute;
+    
+  }
+  @media (max-width: 1000px) {
+  display: flex;
+  border-radius: 8px;
+  background-color: #3333;
+  margin-right: 650px;
+  
+  form {
+    width: 355px;
+  }
+  span {
+    margin: 14px 0px 14px 10px;
     position: absolute;
   }
+}
 `;
 
 const SearchInput = styled.input`
-  color: #3d3d3d;
+  color: #000;
+  background-color: transparent;
   font-size: 16px;
-  width: -webkit-fill-available;
+  width: 325px;
   margin-left: 30px;
   padding: 13px;
   border: none;
@@ -30,17 +47,18 @@ const SearchInput = styled.input`
     outline: none;
   }
   &::placeholder {
-    color: #878787;
+    color: #3333;
     font-size: 16px;
   }
 `;
 
 const SearchIcon = styled(FaSearch)`
-  color: #3d3d3d;
+  color: #000;
+  
 `;
 
 const SearchResultIcon = styled(FaChevronRight)`
-  color: #3d3d3d;
+  color: #000;
   margin-right: 14px;
 `;
 
@@ -55,7 +73,7 @@ const SearchListContainer = styled.ul`
   li {
     margin-top: 9px;
     a {
-      color: #3d3d3d;
+      color: #000;
       display: flex;
       align-items: center;
       width: auto;
@@ -66,7 +84,7 @@ const SearchListContainer = styled.ul`
       transition: all 0.3s ease-in-out;
       &:hover {
         transition: all 0.3s ease-in-out;
-        background-color: #eaeaea;
+        background-color: #fefefe;
       }
     }
   }
@@ -74,7 +92,7 @@ const SearchListContainer = styled.ul`
 
 const ListingDivider = styled.div`
   height: 2px;
-  background-color: #eaeaea;
+  background-color: #fff;
 `;
 // **** END SEARCH BAR STYLES ****
 
