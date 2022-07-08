@@ -17,7 +17,7 @@ const SearchContainer = styled.div`
     position: absolute;
     
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 780px) {
   display: flex;
   border-radius: 8px;
   background-color: #3333;

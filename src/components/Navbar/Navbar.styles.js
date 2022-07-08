@@ -24,6 +24,12 @@ justify-content: space-between;
 align-items: center;
 height: 80px;
 ${Container};
+@media only screen and (max-width:700px){
+    width: 200px;
+    height: 100px
+    align-items: left;
+    
+}
 `;
 
 export const NavLogo = styled(Link)`
@@ -38,6 +44,7 @@ transition: all .5s ease;
 &:hover{
     transform: scale(1.08);
 }
+
 `;
 
 
