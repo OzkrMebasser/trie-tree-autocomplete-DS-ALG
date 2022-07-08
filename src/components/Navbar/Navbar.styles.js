@@ -24,12 +24,7 @@ justify-content: space-between;
 align-items: center;
 height: 80px;
 ${Container};
-@media only screen and (max-width:700px){
-    width: 200px;
-    height: 100px
-    align-items: left;
-    
-}
+
 `;
 
 export const NavLogo = styled(Link)`
@@ -51,7 +46,7 @@ transition: all .5s ease;
 
 export const MenuIcon = styled.div`
 display: none;
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     display: block;
     position: absolute;
     top: 0;
@@ -66,7 +61,7 @@ export const Menu = styled.ul`
 display: flex;
 align-items: center;
 text-align: center;
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:700px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -82,7 +77,7 @@ text-align: center;
 export const MenuItem = styled.li`
 list-style: none;
 height: 80px;
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:700px){
     width: 100%;
     &:hover {
         border: none;
@@ -110,7 +105,7 @@ transition: all .2s ease;
     transform: traslateY(3rem);
     color: #000;
 }
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:700px){
     display: block;
     padding: 3rem;
     text-align: center;
@@ -120,7 +115,7 @@ transition: all .2s ease;
 
 export const MenuItemBtn = styled.li`
 list-style: none;
-@media screen and (max-width:1000px){
+@media screen and (max-width:700px){
     display: flex;
     justify-content: center;
     align-items: center;
