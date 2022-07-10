@@ -17,7 +17,7 @@ const SearchContainer = styled.div`
     position: absolute;
     
   }
-  @media (max-width: 780px) {
+  @media (max-width: 600px) {
   display: flex;
   border-radius: 8px;
   background-color: #3333;
@@ -47,7 +47,7 @@ const SearchInput = styled.input`
     outline: none;
   }
   &::placeholder {
-    color: #3333;
+    color: #000;
     font-size: 16px;
   }
 `;

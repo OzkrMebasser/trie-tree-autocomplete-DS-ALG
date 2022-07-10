@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { FaUserTie, FaRegAddressCard } from "react-icons/fa";
+import { FaUserTie, FaRegAddressCard,FaRegListAlt} from "react-icons/fa";
+// import { MdOutlineAssignmentInd } from "react-icons/md";
 // import { GoPrimitiveDot} from "react-icons/go";
 import { SearchBar } from "./SearchBar";
-import studentList from "../assets/students";
+import studentsLastName from "../assets/students";
 import studentTuition from "../assets/tuition";
+import assignment from "../assets/assignment";
 
 const Style = styled.div`
   display: flex;
@@ -12,6 +14,7 @@ const Style = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin-top:80px;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/estudiando-programacion-min.png?alt=media&token=f032a2c6-75ba-4339-ba75-21197b68e86d");
   background-repeat: no-repeat;
   
@@ -28,8 +31,9 @@ const Title = styled.h1`
 `;
 
 export function Search() {
-  const [words] = useState(studentList);
+  const [words] = useState(studentsLastName);
   const [tuition] = useState(studentTuition);
+  
 
   return (
     <Style>
@@ -55,17 +59,18 @@ export function Search() {
           placeholder="Ingresa la inicial de tu nombre y apellido"
         />
       </div>
+      <br />
       <div>
         {/* Search bar */}
         <Title>
           Buscar por modulo<span> </span>
-          <FaRegAddressCard />
+          <FaRegListAlt />
           <br />
         </Title>
         <SearchBar
-          words={tuition}
-          placeholder="Ingresa la inicial de tu nombre y apellido"
-        />
+          words={assignment}
+          placeholder="Buscar por modulo"
+        /><br /><br /><br /><br /><br /><br />
       </div>
     </Style>
   );
