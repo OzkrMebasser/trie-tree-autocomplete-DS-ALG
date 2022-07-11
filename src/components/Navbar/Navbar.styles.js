@@ -6,7 +6,7 @@ import {Container} from '../../Globalstyles';
 export const Nav = styled.nav` 
 font-size: 18px;
 position: fixed;
-width   : 100%;
+width : 100%;
 top: 0;
 z-index: 999;
 height: 80px;
@@ -16,6 +16,9 @@ box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 display: flex;
 justify-content: center;
 align-items: center;
+@media (max-width: 600px) {
+    width : 70%;
+}
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -28,18 +31,27 @@ ${Container};
 `;
 
 export const NavLogo = styled(Link)`
+
 color: #fff;
 cursor: pointer;
 display: flex;
 align-items: center;
-text-decoration: none;
+// text-decoration: none;
 font-size: 2.5rem;
 font-weight: 5;
 transition: all .5s ease;
 &:hover{
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
-
+@media (max-width: 600px) {
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 5; 
+}
 `;
 
 

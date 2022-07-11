@@ -20,8 +20,10 @@ const SearchContainer = styled.div`
   @media (max-width: 600px) {
   display: flex;
   border-radius: 8px;
-  background-color: #3333;
+  background-color: #000;
+  opacity: 0.8;
   margin-right: 650px;
+  
   
   form {
     width: 355px;
@@ -48,6 +50,23 @@ const SearchInput = styled.input`
   }
   &::placeholder {
     color: #000;
+    font-size: 16px;
+  }
+  @media (max-width: 600px) {
+    color: #fff;
+  background-color: transparent;
+  font-size: 16px;
+  width: 325px;
+  margin-left: 30px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #fff;
     font-size: 16px;
   }
 `;
