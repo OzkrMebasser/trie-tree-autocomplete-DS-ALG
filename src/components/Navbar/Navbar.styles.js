@@ -16,9 +16,7 @@ box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 display: flex;
 justify-content: center;
 align-items: center;
-@media (max-width: 600px) {
-    width : 70%;
-}
+
 `;
 
 export const NavbarContainer = styled(Container)`

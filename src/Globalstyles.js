@@ -34,7 +34,8 @@ margin: 0 auto;
 padding: 0 50px;
 max-width: 1300px;
 width: 100%;
-@media (max-width:400px){
+@media (max-width: 768px){
+    width: 100%;
     padding: 0 10px;
 }
 @media (max-width:991px) {
