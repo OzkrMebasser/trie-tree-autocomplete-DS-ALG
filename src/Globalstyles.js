@@ -34,11 +34,11 @@ margin: 0 auto;
 padding: 0 50px;
 max-width: 1300px;
 width: 100%;
-@media (max-width: 768px){
+@media (max-width: 400px){
     width: 100%;
     padding: 0 10px;
 }
-@media (max-width:991px) {
+@media (max-width:768px) {
     padding: 0 30px;
 }
 @media (min-width: 1500px) {
