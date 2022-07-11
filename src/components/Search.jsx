@@ -17,7 +17,10 @@ const Style = styled.div`
   margin-top:80px;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/estudiando-programacion-min.png?alt=media&token=f032a2c6-75ba-4339-ba75-21197b68e86d");
   background-repeat: no-repeat;
-  
+  @media only screen and (max-width:600px) {
+  margin-bottom: 120px;
+  width: 500px;
+  }
 `;
 
 const Title = styled.h1`
@@ -27,7 +30,15 @@ const Title = styled.h1`
   letter-spacing: 0.3px;
   margin-bottom: 10px;
   text-align: left;
-  
+  @media only screen and (max-width:600px) {
+    background: #fff;
+    width: 355px;
+    height: 35px;
+    padding : 5px;
+    border-radius : 5px;
+   
+
+    }
 `;
 
 export function Search() {

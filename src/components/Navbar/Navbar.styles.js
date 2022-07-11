@@ -29,7 +29,7 @@ ${Container};
 `;
 
 export const NavLogo = styled(Link)`
-
+background: url("https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logo_academclone.png?alt=media&token=385f7d02-a920-4a4b-8ad2-f131f8582932");
 color: #fff;
 cursor: pointer;
 display: flex;
