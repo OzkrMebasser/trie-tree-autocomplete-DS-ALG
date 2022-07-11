@@ -17,12 +17,13 @@ const SearchContainer = styled.div`
     position: absolute;
     
   }
-  // @media (max-width: 600px) {
-  // display: flex;
-  // border-radius: 8px;
-  // background-color: #000;
-  // opacity: 0.8;
-  // margin-right: 650px;
+  @media (max-width: 650px) {
+  display: flex;
+  border-radius: 8px;
+  background-color: #000;
+  opacity: 0.8;
+  margin-right: 650px;
+  // margin-top: 50px;
   
   
   form {
