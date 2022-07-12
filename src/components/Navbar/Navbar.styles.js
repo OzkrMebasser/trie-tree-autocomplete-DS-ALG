@@ -66,7 +66,7 @@ display: none;
     transform: translate(-50%, 20%);
     font-size: 4rem;
     cursor: pointer;
-    width   : 600px;
+    // width   : 600px;
 }
 `;
 
