@@ -45,6 +45,8 @@ transition: all .5s ease;
 }
 @media (max-width: 600px) {
     color: #fff;
+    width: 120px;
+    height: 70px;
     cursor: pointer;
     display: flex;
     align-items: center;

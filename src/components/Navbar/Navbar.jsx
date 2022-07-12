@@ -41,7 +41,7 @@ const Navbar = () => {
                     <NavbarContainer>
                         <NavLogo to="/">
                             {/* <NavIcon/> */}
-                            <img style={{"width": "260px", "height": "70px", "padding": "10px", "marginBotton": "18px", }} src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logo_academclone.png?alt=media&token=385f7d02-a920-4a4b-8ad2-f131f8582932" alt="logo" />
+                            <img style={{"width": "260px", "height": "70px", "padding": "10px", "marginBotton": "18px"  }} src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/logo_academclone.png?alt=media&token=385f7d02-a920-4a4b-8ad2-f131f8582932" alt="logo" />
                             
                         </NavLogo>
                         <MenuIcon onClick={handleClick}>
