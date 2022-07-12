@@ -66,7 +66,7 @@ display: none;
     transform: translate(-50%, 20%);
     font-size: 4rem;
     cursor: pointer;
-    width   : 300px;
+    width   : 600px;
 }
 `;
 
@@ -118,7 +118,7 @@ transition: all .2s ease;
     transform: traslateY(3rem);
     color: #000;
 }
-@media only screen and (max-width:600pxpx){
+@media only screen and (max-width:600px){
     display: block;
     padding: 3rem;
     text-align: center;
