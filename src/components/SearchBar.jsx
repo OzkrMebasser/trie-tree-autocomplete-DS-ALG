@@ -27,7 +27,7 @@ const SearchContainer = styled.div`
   border-radius: 8px;
   background-color: #000;
   opacity: 0.8;
-  margin-right: 700px;
+  margin-right: 720px;
   // margin-top: 50px;
   
   
