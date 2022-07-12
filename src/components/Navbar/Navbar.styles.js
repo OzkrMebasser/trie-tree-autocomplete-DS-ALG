@@ -27,7 +27,9 @@ justify-content: space-between;
 align-items: center;
 height: 80px;
 ${Container};
-
+@media (max-width: 450px) {
+    width: 450px;
+}
 `;
 
 export const NavLogo = styled(Link)`
