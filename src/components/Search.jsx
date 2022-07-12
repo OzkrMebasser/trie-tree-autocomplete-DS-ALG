@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import ReactTooltip from "react-tooltip";
+
 // import Modal, { ModalProvider } from "styled-react-modal";
 import { FaUserTie, FaRegAddressCard,FaRegListAlt} from "react-icons/fa";
 // import { MdOutlineAssignmentInd } from "react-icons/md";
@@ -51,14 +53,17 @@ export function Search() {
   
 
   return (
-    <Style>
+    <Style data-tip data-for="registerTip">
       <div>
+        
         {/* Search bar */}
-        <Title>
-          Buscar estudiante por apellido <span></span>
+        
+        <Title >
+          Buscar estudiante por apellido <span data-tip="React-tooltip"></span>
           <FaUserTie />
           <br />
         </Title>
+        
         <SearchBar words={words} />
       </div>
       <br />
@@ -86,7 +91,12 @@ export function Search() {
           words={assignment}
           placeholder="Buscar por modulo"
         /><br /><br /><br /><br /><br /><br />
+        
       </div>
+      <ReactTooltip id="registerTip" type="dark" place="bottom" effect="solid">
+        Para buscar, necesitas escribir en MAYUSCULAS
+         </ReactTooltip>
     </Style>
+    
   );
 }
