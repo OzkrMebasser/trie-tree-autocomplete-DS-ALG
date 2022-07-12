@@ -93,7 +93,7 @@ const SearchListContainer = styled.ul`
   li {
     margin-top: 9px;
     a {
-      color: #000;
+      color: #fff;
       display: flex;
       align-items: center;
       width: auto;
@@ -104,7 +104,7 @@ const SearchListContainer = styled.ul`
       transition: all 0.3s ease-in-out;
       &:hover {
         transition: all 0.3s ease-in-out;
-        background-color: #fefefe;
+        background-color: #1e0bd0;
       }
     }
   }
@@ -162,7 +162,7 @@ const displayResults = (searchResults) => {
 
 export function SearchBar(props) {
   const {
-    placeholder = 'Búsqueda...',
+    placeholder = 'Búscar por apellido',
     type = 'text',
     words = [],
     disableTermSubmit = false,

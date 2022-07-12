@@ -67,7 +67,7 @@ export function Search() {
         </Title>
         <SearchBar
           words={tuition}
-          placeholder="Ingresa la inicial de tu nombre y apellido"
+          placeholder="Ingresa la inicial de tu apellido y nombre"
         />
       </div>
       <br />

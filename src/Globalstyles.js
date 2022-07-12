@@ -17,14 +17,14 @@ html {
         font-size: 70%;
     }
 }
-body{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 1.6rem;
-    background-i: #F9F9F9;
-    color: #333;
-}
+// body{
+//     font-family: 'Nunito', sans-serif;
+//     font-weight: 400;
+//     line-height: 1.6;
+//     font-size: 1.6rem;
+//     background-i: #F9F9F9;
+//     color: #333;
+// }
 `;
 
 export default GlobalStyles;
@@ -32,14 +32,14 @@ export default GlobalStyles;
 export const Container = styled.div`
 margin: 0 auto;
 padding: 0 50px;
-max-width: 1300px;
-width: 100%;
-@media (max-width: 400px){
-    width: 100%;
-    padding: 0 10px;
+// max-width: 1300px;
+// width: 100%;
+@media (max-width: 550px){
+    width: 550px;
+    // padding: 0 10px;
 }
 @media (max-width:768px) {
-    padding: 0 30px;
+    width: 768px;
 }
 @media (min-width: 1500px) {
     max-width: 1500px;
