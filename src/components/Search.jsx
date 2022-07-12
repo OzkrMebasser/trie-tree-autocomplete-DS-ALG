@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+// import Modal, { ModalProvider } from "styled-react-modal";
 import { FaUserTie, FaRegAddressCard,FaRegListAlt} from "react-icons/fa";
 // import { MdOutlineAssignmentInd } from "react-icons/md";
 // import { GoPrimitiveDot} from "react-icons/go";
@@ -8,17 +9,20 @@ import studentsLastName from "../assets/students";
 import studentTuition from "../assets/tuition";
 import assignment from "../assets/assignment";
 
+
 const Style = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin-left: 7%;
   margin-top:80px;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/estudiando-programacion-min.png?alt=media&token=f032a2c6-75ba-4339-ba75-21197b68e86d");
   background-repeat: no-repeat;
   @media only screen and (max-width:600px) {
   margin-bottom: 120px;
+  margin-left: 0%;
   width: 500px;
   }
 `;

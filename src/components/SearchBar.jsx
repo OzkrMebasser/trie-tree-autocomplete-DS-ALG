@@ -8,9 +8,14 @@ const SearchContainer = styled.div`
   display: flex;
   border-radius: 8px;
   margin-left: 650px;
-  background-color: #3333;
+  background-color: #000;
+  opacity: 0.8;
+  text-transform: uppercase;
+
   form {
     width: 355px;
+    text-transform: uppercase;
+
   }
   span {
     margin: 14px 0px 14px 10px;
@@ -37,7 +42,7 @@ const SearchContainer = styled.div`
 `;
 
 const SearchInput = styled.input`
-  color: #000;
+  color: #fff;
   background-color: transparent;
   font-size: 16px;
   width: 325px;
@@ -50,11 +55,11 @@ const SearchInput = styled.input`
     outline: none;
   }
   &::placeholder {
-    color: #000;
+    color: #fff;
     font-size: 16px;
   }
   @media (max-width: 600px) {
-    color: #fff;
+  color: #fff;
   background-color: transparent;
   font-size: 16px;
   width: 325px;
@@ -73,13 +78,19 @@ const SearchInput = styled.input`
 `;
 
 const SearchIcon = styled(FaSearch)`
-  color: #000;
-  
+  color: #FFF;
+  @media (max-width: 600px) {
+    color: #FFF;
+  }
 `;
 
 const SearchResultIcon = styled(FaChevronRight)`
-  color: #000;
+  color: #fff;
   margin-right: 14px;
+  @media (max-width: 600px) {
+    color: #fff;
+  }
+}
 `;
 
 const SearchListContainer = styled.ul`
@@ -87,6 +98,9 @@ const SearchListContainer = styled.ul`
   flex-direction: column;
   list-style: none;
   padding: 0px 12px 12px 12px;
+  @media (max-width: 600px) {
+    color: #fff;
+  }
   form {
     width: 285px;
   }
@@ -105,6 +119,7 @@ const SearchListContainer = styled.ul`
       &:hover {
         transition: all 0.3s ease-in-out;
         background-color: #1e0bd0;
+        color: #fff;
       }
     }
   }
@@ -112,8 +127,8 @@ const SearchListContainer = styled.ul`
 
 const ListingDivider = styled.div`
   height: 2px;
-  background-color: #fff;
-`;
+  background-color: #;
+  `;
 // **** END SEARCH BAR STYLES ****
 
 const handleTermSubmit = (e, search, setSearch, disableTermSubmit) => {
