@@ -17,7 +17,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 @media (max-width: 600px) {
-    width: 600px;
+    width: 450px;
 }
 `;
 
@@ -45,8 +45,8 @@ transition: all .5s ease;
 }
 @media (max-width: 600px) {
     color: #fff;
-    width: 120px;
-    height: 70px;
+    width: 100px;
+    height: 55px;
     cursor: pointer;
     display: flex;
     align-items: center;
